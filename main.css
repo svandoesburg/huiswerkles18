@@ -166,7 +166,7 @@ vertical-align:top
   background-color: brown;
   display: inline-block;
   vertical-align:top
-}
+}}
 
 table{
 border-collapse: collapse;
@@ -176,14 +176,4 @@ text-align: center;
 td, th{
 padding: 10px 5px;
 }
-input[type="text"], input[type="email"], textarea, select, button
-{display: block;margin: 15px 0px;
-  width: 400px;
-  box-sizing: border-box;}
-  button:active{
-    background-color: darkgreen;
-    color: white;
-    border-radius: 4px;
-    box-shadow: inset 2px 2px 5px blue;}
-
 </style>
