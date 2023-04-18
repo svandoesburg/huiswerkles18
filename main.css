@@ -1,0 +1,189 @@
+<style>
+body {
+  background: #A9A9A9;
+  color: #444;
+}
+h1 {
+color: red;
+font-family: fantasy;
+background-image: url("https://gloweindhoven.nl/assets/uploads/GLOW2021_Footprint_BvOF_04_lr-1450x967.jpg");
+background-size: auto;
+background-repeat: no-repeat;}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+  background-image: url("https://www.thisiseindhoven.com/getmedia/aeeae414-e03a-4182-8298-28cb0e81f0ec/Lichttoren_Blob_Nadia-ten-Wolde.jpg?width=2084&height=1389&ext=.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+}
+
+h2,h3,h4,h5,h6{
+  color: #444;
+font-family: fantasy;
+line-height: 1;
+}
+img{
+  width: 200px;
+  height: 100px;
+        margin: 10px;
+}
+#header{
+background-color: #A9A9A9;
+padding: 32px 32px 32px 46px;
+}
+
+#footer{
+  background-color: #A9A9A9;
+  padding: 32px 32px 32px 46px;
+}
+
+#inhoudeen{
+width: 20%;
+display: inline-block;
+vertical-align:top
+}
+#inhoudtwee{
+width: 20%;
+display: inline-block;
+vertical-align:top
+}
+#inhouddrie{
+width: 20%;
+background-color: yellow;
+display: inline-block;
+vertical-align:top
+}
+#inhoudvier{
+width: 20%;
+background-color: green;
+display: inline-block;
+vertical-align:top
+}
+#inhoudvijf{
+width: 20%;
+background-color: blue;
+display: inline-block;
+vertical-align:top
+}
+#inhoudzes{
+width: 20%;
+background-color: purple;
+display: inline-block;
+vertical-align:top
+}
+#inhoudzeven{
+width: 20%;
+background-color: brown;
+display: inline-block;
+vertical-align:top
+}
+#inhoudacht{
+width: 20%;
+background-color: brown;
+display: inline-block;
+vertical-align:top
+}
+#inhoudnegen{
+width: 5%;
+background-color: brown;
+display: inline-block;
+vertical-align:top
+}
+#inhoudtien{
+width: 20%;
+background-color: brown;
+display: inline-block;
+vertical-align:top
+}
+#inhoudelf{
+width: 20%;
+background-color: brown;
+display: inline-block;
+vertical-align:top
+}
+@media only screen and (min-width: 768px) {
+  #inhoudeen{
+  width: 10%;
+  display: inline-block;
+  vertical-align:top
+  }
+  #inhoudtwee{
+  width: 10%;
+  display: inline-block;
+  vertical-align:top
+  }
+  #inhouddrie{
+  width: 5%;
+  background-color: yellow;
+  display: inline-block;
+  vertical-align:top
+  }
+  #inhoudvier{
+  width: 5%;
+  background-color: green;
+  display: inline-block;
+  vertical-align:top
+  }
+  #inhoudvijf{
+  width: 5%;
+  background-color: blue;
+  display: inline-block;
+  vertical-align:top
+  }
+  #inhoudzes{
+  width: 5%;
+  background-color: purple;
+  display: inline-block;
+  vertical-align:top
+  }
+  #inhoudzeven{
+  width: 5%;
+  background-color: brown;
+  display: inline-block;
+  vertical-align:top
+  }
+  #inhoudacht{
+  width: 5%;
+  background-color: brown;
+  display: inline-block;
+  vertical-align:top
+  }
+  #inhoudnegen{
+  width: 5%;
+  background-color: brown;
+  display: inline-block;
+  vertical-align:top
+  }
+  #inhoudtien{
+  width: 5%;
+  background-color: brown;
+  display: inline-block;
+  vertical-align:top
+  }
+  #inhoudelf{
+  width: 5%;
+  background-color: brown;
+  display: inline-block;
+  vertical-align:top
+}
+
+table{
+border-collapse: collapse;
+width: 800px;
+text-align: center;
+}
+td, th{
+padding: 10px 5px;
+}
+input[type="text"], input[type="email"], textarea, select, button
+{display: block;margin: 15px 0px;
+  width: 400px;
+  box-sizing: border-box;}
+  button:active{
+    background-color: darkgreen;
+    color: white;
+    border-radius: 4px;
+    box-shadow: inset 2px 2px 5px blue;}
+
+</style>
