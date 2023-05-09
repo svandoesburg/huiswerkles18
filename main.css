@@ -1,179 +1,95 @@
-<style>
+/* algemene stijl */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: #A9A9A9;
-  color: #444;
-}
-h1 {
-color: red;
-font-family: fantasy;
-background-image: url("https://gloweindhoven.nl/assets/uploads/GLOW2021_Footprint_BvOF_04_lr-1450x967.jpg");
-background-size: auto;
-background-repeat: no-repeat;}
-
-@media only screen and (min-width: 768px) {
-  h1 {
-  background-image: url("https://www.thisiseindhoven.com/getmedia/aeeae414-e03a-4182-8298-28cb0e81f0ec/Lichttoren_Blob_Nadia-ten-Wolde.jpg?width=2084&height=1389&ext=.jpg");
-  background-size: auto;
-  background-repeat: no-repeat;
-}
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-h2,h3,h4,h5,h6{
-  color: #444;
-font-family: fantasy;
-line-height: 1;
-}
-img{
-  width: 200px;
-  height: 100px;
-        margin: 10px;
-}
-#header{
-background-color: #A9A9A9;
-padding: 32px 32px 32px 46px;
+/* stijl voor de header */
+header {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/07/Lichttoren_Eindhoven_1_-_Cropped.jpg);
+  background-size: cover;
+  background-position: center;
+  color: red;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
 }
 
-#footer{
-  background-color: #A9A9A9;
-  padding: 32px 32px 32px 46px;
+/* stijl voor de linkerkolom */
+.left-column {
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
 }
 
-#inhoudeen{
-width: 20%;
-display: inline-block;
-vertical-align:top
+.left-column h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
 }
-#inhoudtwee{
-width: 20%;
-display: inline-block;
-vertical-align:top
+
+.left-column ul {
+  list-style-type: none;
+  padding: 0;
 }
-#inhouddrie{
-width: 20%;
-background-color: yellow;
-display: inline-block;
-vertical-align:top
+
+.left-column li {
+  margin-bottom: 0.5rem;
 }
-#inhoudvier{
-width: 20%;
-background-color: green;
-display: inline-block;
-vertical-align:top
+
+/* stijl voor de rechterkolom */
+.right-column {
+  width: 100%;
+  padding: 1rem;
+  background-color: #f5f5f5;
 }
-#inhoudvijf{
-width: 20%;
-background-color: blue;
-display: inline-block;
-vertical-align:top
+
+.right-column h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
 }
-#inhoudzes{
-width: 20%;
-background-color: purple;
-display: inline-block;
-vertical-align:top
+
+.right-column .article {
+  display: flex;
+  margin-bottom: 1rem;
 }
-#inhoudzeven{
-width: 20%;
-background-color: brown;
-display: inline-block;
-vertical-align:top
-}
-#inhoudacht{
-width: 20%;
-background-color: brown;
-display: inline-block;
-vertical-align:top
-}
-#inhoudnegen{
-width: 5%;
-background-color: brown;
-display: inline-block;
-vertical-align:top
-}
-#inhoudtien{
-width: 20%;
-background-color: brown;
-display: inline-block;
-vertical-align:top
-}
-#inhoudelf{
-width: 20%;
-background-color: brown;
-display: inline-block;
-vertical-align:top
-}
-@media only screen and (min-width: 768px) {
-  #inhoudeen{
+
+.right-column .article img {
   width: 10%;
-  display: inline-block;
-  vertical-align:top
-  }
-  #inhoudtwee{
-  width: 10%;
-  display: inline-block;
-  vertical-align:top
-  }
-  #inhouddrie{
-  width: 5%;
-  background-color: yellow;
-  display: inline-block;
-  vertical-align:top
-  }
-  #inhoudvier{
-  width: 5%;
-  background-color: green;
-  display: inline-block;
-  vertical-align:top
-  }
-  #inhoudvijf{
-  width: 5%;
-  background-color: blue;
-  display: inline-block;
-  vertical-align:top
-  }
-  #inhoudzes{
-  width: 5%;
-  background-color: purple;
-  display: inline-block;
-  vertical-align:top
-  }
-  #inhoudzeven{
-  width: 5%;
-  background-color: brown;
-  display: inline-block;
-  vertical-align:top
-  }
-  #inhoudacht{
-  width: 5%;
-  background-color: brown;
-  display: inline-block;
-  vertical-align:top
-  }
-  #inhoudnegen{
-  width: 5%;
-  background-color: brown;
-  display: inline-block;
-  vertical-align:top
-  }
-  #inhoudtien{
-  width: 5%;
-  background-color: brown;
-  display: inline-block;
-  vertical-align:top
-  }
-  #inhoudelf{
-  width: 5%;
-  background-color: brown;
-  display: inline-block;
-  vertical-align:top
-}}
+	height: auto;
+  margin-right: 1rem;
+}
 
-table{
-border-collapse: collapse;
-width: 800px;
-text-align: center;
+.right-column .article p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
 }
-td, th{
-padding: 10px 5px;
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .left-column {
+    flex: 1 1 30%;
+    max-width: 30%;
+    margin-right: 20px;
+    margin-bottom: 0;
+    float: left
+  }
+
+  .right-column {
+    flex: 1 1 69%;
+    max-width: 69%;
+    float: left;
+  }
+
 }
-</style>
