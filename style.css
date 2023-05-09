@@ -1,0 +1,95 @@
+/* algemene stijl */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* stijl voor de header */
+header {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/07/Lichttoren_Eindhoven_1_-_Cropped.jpg);
+  background-size: cover;
+  background-position: center;
+  color: red;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* stijl voor de linkerkolom */
+.left-column {
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+}
+
+.left-column h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.left-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.left-column li {
+  margin-bottom: 0.5rem;
+}
+
+/* stijl voor de rechterkolom */
+.right-column {
+  width: 100%;
+  padding: 1rem;
+  background-color: #f5f5f5;
+}
+
+.right-column h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.right-column .article {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.right-column .article img {
+  width: 10%;
+	height: auto;
+  margin-right: 1rem;
+}
+
+.right-column .article p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .left-column {
+    flex: 1 1 30%;
+    max-width: 30%;
+    margin-right: 20px;
+    margin-bottom: 0;
+    float: left
+  }
+
+  .right-column {
+    flex: 1 1 69%;
+    max-width: 69%;
+    float: left;
+  }
+
+}
